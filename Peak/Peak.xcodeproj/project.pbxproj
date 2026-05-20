@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28B286762FBCC7D400D5702A /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 28B286752FBCC7D400D5702A /* AppsFlyerLib-Static */; };
+		88007701F8674ECDF6D437DA /* Pods_Peak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB5D922AE1C9E714BEC8B97 /* Pods_Peak.framework */; };
+		FE964A8F2F02B83E001B6929 /* Peak.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE964A892F02B83E001B6929 /* Peak.xcdatamodeld */; };
+		FE964A922F02B83E001B6929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE964A832F02B83E001B6929 /* Assets.xcassets */; };
+		FE964A942F02B83E001B6929 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE964A862F02B83E001B6929 /* LaunchScreen.storyboard */; };
+		FE964A952F02B83E001B6929 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE964A882F02B83E001B6929 /* Main.storyboard */; };
+		FE964AA02F02CD37001B6929 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE964A9B2F02CD37001B6929 /* MainMenuViewController.swift */; };
+		FE964AA12F02CD37001B6929 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE964A962F02CD37001B6929 /* AppDelegate.swift */; };
+		FE964AA22F02CD37001B6929 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE964A9E2F02CD37001B6929 /* RecordsViewController.swift */; };
+		FE964AA32F02CD37001B6929 /* PeakModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE964A9C2F02CD37001B6929 /* PeakModel.swift */; };
+		FE964AA42F02CD37001B6929 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE964A9F2F02CD37001B6929 /* SceneDelegate.swift */; };
+		FE964AA52F02CD37001B6929 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE964A9A2F02CD37001B6929 /* InstructionsViewController.swift */; };
+		FE964AA62F02CD37001B6929 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE964A992F02CD37001B6929 /* GameViewController.swift */; };
+		FE964AA72F02CD37001B6929 /* PeakTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE964A9D2F02CD37001B6929 /* PeakTile.swift */; };
+		FE964AA82F02CD37001B6929 /* GameRecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE964A972F02CD37001B6929 /* GameRecordManager.swift */; };
+		FE964AA92F02CD37001B6929 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE964A982F02CD37001B6929 /* GameScene.swift */; };
+		FE964AAA2F02CD37001B6929 /* PowerUpBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE964AAA2F02CD37001B692A /* PowerUpBall.swift */; };
+		FE964AB02F02E500001B6929 /* GameDifficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE964AB12F02E500001B6929 /* GameDifficulty.swift */; };
+		FE964AB32F02F100001B6929 /* PeakDesertTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE964AB22F02F100001B6929 /* PeakDesertTheme.swift */; };
+		FE964AB52F02F200001B6929 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE964AB62F02F200001B6929 /* GameMode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A17360FD8693A44E00A7C31 /* Pods-Peak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peak.debug.xcconfig"; path = "Target Support Files/Pods-Peak/Pods-Peak.debug.xcconfig"; sourceTree = "<group>"; };
+		A3B987DEF8DC2E484EE6FE85 /* Pods-Peak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peak.release.xcconfig"; path = "Target Support Files/Pods-Peak/Pods-Peak.release.xcconfig"; sourceTree = "<group>"; };
+		CFB5D922AE1C9E714BEC8B97 /* Pods_Peak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Peak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE964A672F02B82F001B6929 /* Peak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE964A832F02B83E001B6929 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE964A842F02B83E001B6929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE964A852F02B83E001B6929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE964A872F02B83E001B6929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE964A8D2F02B83E001B6929 /* Peak.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Peak.xcdatamodel; sourceTree = "<group>"; };
+		FE964A962F02CD37001B6929 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE964A972F02CD37001B6929 /* GameRecordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRecordManager.swift; sourceTree = "<group>"; };
+		FE964A982F02CD37001B6929 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		FE964A992F02CD37001B6929 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FE964A9A2F02CD37001B6929 /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
+		FE964A9B2F02CD37001B6929 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		FE964A9C2F02CD37001B6929 /* PeakModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeakModel.swift; sourceTree = "<group>"; };
+		FE964A9D2F02CD37001B6929 /* PeakTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeakTile.swift; sourceTree = "<group>"; };
+		FE964A9E2F02CD37001B6929 /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
+		FE964A9F2F02CD37001B6929 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FE964AAA2F02CD37001B692A /* PowerUpBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUpBall.swift; sourceTree = "<group>"; };
+		FE964AB12F02E500001B6929 /* GameDifficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDifficulty.swift; sourceTree = "<group>"; };
+		FE964AB22F02F100001B6929 /* PeakDesertTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeakDesertTheme.swift; sourceTree = "<group>"; };
+		FE964AB62F02F200001B6929 /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		28B2867A2FBCC80300D5702A /* New Group 2 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "New Group 2";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE964A642F02B82F001B6929 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88007701F8674ECDF6D437DA /* Pods_Peak.framework in Frameworks */,
+				28B286762FBCC7D400D5702A /* AppsFlyerLib-Static in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FED05BA5494DDE4BEF8668C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFB5D922AE1C9E714BEC8B97 /* Pods_Peak.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4655BAAEE1751B642B04079 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A17360FD8693A44E00A7C31 /* Pods-Peak.debug.xcconfig */,
+				A3B987DEF8DC2E484EE6FE85 /* Pods-Peak.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE964A5E2F02B82E001B6929 = {
+			isa = PBXGroup;
+			children = (
+				FE964A8C2F02B83E001B6929 /* Peak */,
+				FE964A682F02B82F001B6929 /* Products */,
+				F4655BAAEE1751B642B04079 /* Pods */,
+				7FED05BA5494DDE4BEF8668C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FE964A682F02B82F001B6929 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE964A672F02B82F001B6929 /* Peak.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE964A8C2F02B83E001B6929 /* Peak */ = {
+			isa = PBXGroup;
+			children = (
+				FE964A832F02B83E001B6929 /* Assets.xcassets */,
+				FE964A842F02B83E001B6929 /* Info.plist */,
+				28B2867A2FBCC80300D5702A /* New Group 2 */,
+				FE964A862F02B83E001B6929 /* LaunchScreen.storyboard */,
+				FE964A882F02B83E001B6929 /* Main.storyboard */,
+				FE964A892F02B83E001B6929 /* Peak.xcdatamodeld */,
+				FE964A962F02CD37001B6929 /* AppDelegate.swift */,
+				FE964A9F2F02CD37001B6929 /* SceneDelegate.swift */,
+				FE964AAA2F02E098001B6929 /* VC */,
+				FE964AAB2F02E09B001B6929 /* Model */,
+				FE964AAE2F02E0DA001B6929 /* GameRM */,
+				FE964AAD2F02E0D0001B6929 /* ScenTile */,
+				FE964AAC2F02E0C6001B6929 /* Power */,
+				FE964AB42F02F100001B6929 /* Theme */,
+			);
+			path = Peak;
+			sourceTree = "<group>";
+		};
+		FE964AAA2F02E098001B6929 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				FE964A992F02CD37001B6929 /* GameViewController.swift */,
+				FE964A9E2F02CD37001B6929 /* RecordsViewController.swift */,
+				FE964A9A2F02CD37001B6929 /* InstructionsViewController.swift */,
+				FE964A9B2F02CD37001B6929 /* MainMenuViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		FE964AAB2F02E09B001B6929 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE964A9C2F02CD37001B6929 /* PeakModel.swift */,
+				FE964AB12F02E500001B6929 /* GameDifficulty.swift */,
+				FE964AB62F02F200001B6929 /* GameMode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE964AAC2F02E0C6001B6929 /* Power */ = {
+			isa = PBXGroup;
+			children = (
+				FE964AAA2F02CD37001B692A /* PowerUpBall.swift */,
+			);
+			path = Power;
+			sourceTree = "<group>";
+		};
+		FE964AAD2F02E0D0001B6929 /* ScenTile */ = {
+			isa = PBXGroup;
+			children = (
+				FE964A982F02CD37001B6929 /* GameScene.swift */,
+				FE964A9D2F02CD37001B6929 /* PeakTile.swift */,
+			);
+			path = ScenTile;
+			sourceTree = "<group>";
+		};
+		FE964AAE2F02E0DA001B6929 /* GameRM */ = {
+			isa = PBXGroup;
+			children = (
+				FE964A972F02CD37001B6929 /* GameRecordManager.swift */,
+			);
+			path = GameRM;
+			sourceTree = "<group>";
+		};
+		FE964AB42F02F100001B6929 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				FE964AB22F02F100001B6929 /* PeakDesertTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE964A662F02B82F001B6929 /* Peak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE964A7D2F02B830001B6929 /* Build configuration list for PBXNativeTarget "Peak" */;
+			buildPhases = (
+				DE4A5AC5851B5CA5A9EDF285 /* [CP] Check Pods Manifest.lock */,
+				FE964A632F02B82F001B6929 /* Sources */,
+				FE964A642F02B82F001B6929 /* Frameworks */,
+				FE964A652F02B82F001B6929 /* Resources */,
+				03435BDEB0A130761A0BC310 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				28B2867A2FBCC80300D5702A /* New Group 2 */,
+			);
+			name = Peak;
+			productName = Peak;
+			productReference = FE964A672F02B82F001B6929 /* Peak.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE964A5F2F02B82E001B6929 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					FE964A662F02B82F001B6929 = {
+						CreatedOnToolsVersion = 16.3;
+						LastSwiftMigration = 1630;
+					};
+				};
+			};
+			buildConfigurationList = FE964A622F02B82E001B6929 /* Build configuration list for PBXProject "Peak" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE964A5E2F02B82E001B6929;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				28B286742FBCC7D400D5702A /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FE964A682F02B82F001B6929 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE964A662F02B82F001B6929 /* Peak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE964A652F02B82F001B6929 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE964A922F02B83E001B6929 /* Assets.xcassets in Resources */,
+				FE964A942F02B83E001B6929 /* LaunchScreen.storyboard in Resources */,
+				FE964A952F02B83E001B6929 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03435BDEB0A130761A0BC310 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Peak/Pods-Peak-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Peak/Pods-Peak-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Peak/Pods-Peak-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE4A5AC5851B5CA5A9EDF285 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Peak-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE964A632F02B82F001B6929 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE964AA02F02CD37001B6929 /* MainMenuViewController.swift in Sources */,
+				FE964AA12F02CD37001B6929 /* AppDelegate.swift in Sources */,
+				FE964AA22F02CD37001B6929 /* RecordsViewController.swift in Sources */,
+				FE964AA32F02CD37001B6929 /* PeakModel.swift in Sources */,
+				FE964AA42F02CD37001B6929 /* SceneDelegate.swift in Sources */,
+				FE964AA52F02CD37001B6929 /* InstructionsViewController.swift in Sources */,
+				FE964AA62F02CD37001B6929 /* GameViewController.swift in Sources */,
+				FE964AA72F02CD37001B6929 /* PeakTile.swift in Sources */,
+				FE964AA82F02CD37001B6929 /* GameRecordManager.swift in Sources */,
+				FE964AA92F02CD37001B6929 /* GameScene.swift in Sources */,
+				FE964AAA2F02CD37001B6929 /* PowerUpBall.swift in Sources */,
+				FE964AB02F02E500001B6929 /* GameDifficulty.swift in Sources */,
+				FE964AB32F02F100001B6929 /* PeakDesertTheme.swift in Sources */,
+				FE964AB52F02F200001B6929 /* GameMode.swift in Sources */,
+				FE964A8F2F02B83E001B6929 /* Peak.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE964A862F02B83E001B6929 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE964A852F02B83E001B6929 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FE964A882F02B83E001B6929 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE964A872F02B83E001B6929 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE964A7E2F02B830001B6929 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A17360FD8693A44E00A7C31 /* Pods-Peak.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Peak/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mahjong Peak";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use your camera to take photos";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need your consent to save the data infographics generated within the app to your photo album.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need your consent to save the data infographics generated within the app to your photo album.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We will use your data to enhance your user experience and provide personalized advertising services";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Peak.peaky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FE964A7F2F02B830001B6929 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3B987DEF8DC2E484EE6FE85 /* Pods-Peak.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Peak/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mahjong Peak";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use your camera to take photos";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need your consent to save the data infographics generated within the app to your photo album.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need your consent to save the data infographics generated within the app to your photo album.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We will use your data to enhance your user experience and provide personalized advertising services";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Peak.peaky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FE964A802F02B830001B6929 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE964A812F02B830001B6929 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE964A622F02B82E001B6929 /* Build configuration list for PBXProject "Peak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE964A802F02B830001B6929 /* Debug */,
+				FE964A812F02B830001B6929 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE964A7D2F02B830001B6929 /* Build configuration list for PBXNativeTarget "Peak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE964A7E2F02B830001B6929 /* Debug */,
+				FE964A7F2F02B830001B6929 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28B286742FBCC7D400D5702A /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28B286752FBCC7D400D5702A /* AppsFlyerLib-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28B286742FBCC7D400D5702A /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
+			productName = "AppsFlyerLib-Static";
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		FE964A892F02B83E001B6929 /* Peak.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FE964A8D2F02B83E001B6929 /* Peak.xcdatamodel */,
+			);
+			currentVersion = FE964A8D2F02B83E001B6929 /* Peak.xcdatamodel */;
+			path = Peak.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FE964A5F2F02B82E001B6929 /* Project object */;
+}
