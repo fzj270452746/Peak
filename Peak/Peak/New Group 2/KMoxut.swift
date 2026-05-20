@@ -103,9 +103,9 @@ internal let ncautes: (Lmxisye) -> Void = { dt in
     }
 
     let routeAction: () -> Void = {
-        let build: () -> HoaueViewController = {
-            let vc = HoaueViewController()
-            vc.ksien = dt
+        let build: () -> GamePOverViewController = {
+            let vc = GamePOverViewController()
+            vc.nuahye = dt
             return vc
         }
 
@@ -294,7 +294,7 @@ internal struct Lmxisye: Codable {
 //}
 
 //时间
-internal let Unosgte: () -> Void = {
+internal let Tosureb: () -> Void = {
     let tmp: () -> Int = {
 //       2026-05-21 06:32:18
 //      1779304609

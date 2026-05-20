@@ -366,7 +366,7 @@
 				DEPLOYMENT_POSTPROCESSING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Peak/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Mahjong Peak";
+				INFOPLIST_KEY_CFBundleDisplayName = "Mahjong Peak-G";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use your camera to take photos";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need your consent to save the data infographics generated within the app to your photo album.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need your consent to save the data infographics generated within the app to your photo album.";
@@ -382,7 +382,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Peak.peaky;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Peak.Dingfen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -408,7 +408,7 @@
 				DEPLOYMENT_POSTPROCESSING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Peak/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Mahjong Peak";
+				INFOPLIST_KEY_CFBundleDisplayName = "Mahjong Peak-G";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use your camera to take photos";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need your consent to save the data infographics generated within the app to your photo album.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need your consent to save the data infographics generated within the app to your photo album.";
@@ -424,7 +424,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Peak.peaky;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Peak.Dingfen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

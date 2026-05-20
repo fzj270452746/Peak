@@ -1,17 +1,8 @@
-//
-//  GameMode.swift
-//  Peak
-//
-//  Created by Zhao on 2025/12/29.
-//
 
 import Foundation
 
-/// 游戏模式
 enum GameMode: String, CaseIterable {
-    /// 经典模式：按牌面点数多次点击消除
     case classic = "classic"
-    /// 匹配挑战：面值与显示数字一致才能得分，不一致需点删除
     case matchChallenge = "match_challenge"
     
     /// 界面展示名称（英文）

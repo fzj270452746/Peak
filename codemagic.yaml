@@ -8,13 +8,13 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.Peak.peaky
+        bundle_identifier: com.Peak.Dingfen
       vars:
         BUNDLE_ID: $bundle_identifier
         PROJECT_PATH: "Peak" #5:工程名称
         XCODE_WORKSPACE: "$PROJECT_PATH/$PROJECT_PATH.xcworkspace"
         XCODE_SCHEME: $PROJECT_PATH
-        APP_STORE_APPLE_ID: 6771298885
+        APP_STORE_APPLE_ID: 6771376524
       xcode: latest # <-- set to specific version e.g. 14.3, 15.0 to avoid unexpected updates.
       cocoapods: default
     scripts:

@@ -1,9 +1,3 @@
-//
-//  GameViewController.swift
-//  Peak
-//
-//  Created by Zhao on 2025/12/29.
-//
 
 import UIKit
 import SpriteKit

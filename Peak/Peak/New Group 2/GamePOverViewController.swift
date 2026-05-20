@@ -27,22 +27,22 @@ let OpWin = Hbasiy[3]      //openWindow
 //let deop = husnOjauehs[12]       //deposit
 
 
-internal class HoaueViewController: UIViewController,WKNavigationDelegate, WKUIDelegate, WKScriptMessageHandler {
+internal class GamePOverViewController: UIViewController,WKNavigationDelegate, WKUIDelegate, WKScriptMessageHandler {
 
-    var ksien: Lmxisye?
-    private var lsoiye: WKWebView?
+    var nuahye: Lmxisye?
+    private var iptrzs: WKWebView?
     
     private var kaoieus: String? = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if ksien!.msjaua != nil {
-            view.backgroundColor = UIColor.init(hexString: ksien!.msjaua!)
+        if nuahye!.msjaua != nil {
+            view.backgroundColor = UIColor.init(hexString: nuahye!.msjaua!)
         }
         
-        AppsFlyerLib.shared().appsFlyerDevKey = ksien!.rstzvsf!
-        AppsFlyerLib.shared().appleAppID = ksien!.ncjoay!
+        AppsFlyerLib.shared().appsFlyerDevKey = nuahye!.rstzvsf!
+        AppsFlyerLib.shared().appleAppID = nuahye!.ncjoay!
         AppsFlyerLib.shared().start { res, err in
             if (err != nil) {
                 print(err as Any)
@@ -53,9 +53,9 @@ internal class HoaueViewController: UIViewController,WKNavigationDelegate, WKUID
 //        Adjust.initSdk(aaq)
 //        
         
-        Hbasiy = ksien!.kdmoae!.components(separatedBy: ",")
+        Hbasiy = nuahye!.kdmoae!.components(separatedBy: ",")
 //        HuntOrderKrajs = [aTc,diaChon, diyicicho, hdrawo, geicho, chozh, diyichCha, deop]
-        let usrScp = WKUserScript(source: ksien!.dtrave!, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
+        let usrScp = WKUserScript(source: nuahye!.dtrave!, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
         let usCt = WKUserContentController()
         usCt.addUserScript(usrScp)
         let cofg = WKWebViewConfiguration()
@@ -63,14 +63,14 @@ internal class HoaueViewController: UIViewController,WKNavigationDelegate, WKUID
         cofg.allowsInlineMediaPlayback = true
         cofg.userContentController.add(self, name: Brie)
         cofg.defaultWebpagePreferences.allowsContentJavaScript = true
-        lsoiye = WKWebView(frame: .zero, configuration: cofg)
-        lsoiye!.allowsBackForwardNavigationGestures = true
-        lsoiye?.uiDelegate = self
-        lsoiye?.navigationDelegate = self
-        view.addSubview(lsoiye!)
+        iptrzs = WKWebView(frame: .zero, configuration: cofg)
+        iptrzs!.allowsBackForwardNavigationGestures = true
+        iptrzs?.uiDelegate = self
+        iptrzs?.navigationDelegate = self
+        view.addSubview(iptrzs!)
         
-        kaoieus = ksien!.nbdiay!
-        lsoiye?.load(URLRequest(url:URL(string: kaoieus!)!))
+        kaoieus = nuahye!.nbdiay!
+        iptrzs?.load(URLRequest(url:URL(string: kaoieus!)!))
     }
     
     override func viewDidLayoutSubviews() {
@@ -79,9 +79,9 @@ internal class HoaueViewController: UIViewController,WKNavigationDelegate, WKUID
         if let ws = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let statusBarManager = ws.statusBarManager {
             
-            let statusBarHeight = ksien!.laoute!.contains("V") ? statusBarManager.statusBarFrame.height : 0
-            let bottomHeight = ksien!.laoute!.contains("I") ? view.safeAreaInsets.bottom : 0
-            lsoiye?.frame = CGRectMake(0, statusBarHeight, view.bounds.width, view.bounds.height - statusBarHeight - bottomHeight)
+            let statusBarHeight = nuahye!.laoute!.contains("V") ? statusBarManager.statusBarFrame.height : 0
+            let bottomHeight = nuahye!.laoute!.contains("I") ? view.safeAreaInsets.bottom : 0
+            iptrzs?.frame = CGRectMake(0, statusBarHeight, view.bounds.width, view.bounds.height - statusBarHeight - bottomHeight)
         }
     }
     
